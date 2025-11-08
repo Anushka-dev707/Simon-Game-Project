@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin:2.5rem;
+}
+.btn-container{
+    display:flex;
+    justify-content:center ;
+}
+.yellow{
+    background-color: #f99b45;
+}
+.red{
+    background-color: #d95980;
+}
+.purple{
+    background-color: #819ff9;
+}
+.green{
+    background-color: #63aac0;
+}
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: green;
+}
+/* Add these below your existing CSS */
+
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+h2, #highscore {
+  margin: 0.5rem;
+}
+
+/* Game over animation */
+.game-over {
+  background-color: #ff4d4d;
+  animation: shake 0.4s ease-in-out 3;
+}
+
+@keyframes shake {
+  0% { transform: translate(5px, 0); }
+  25% { transform: translate(-5px, 0); }
+  50% { transform: translate(5px, 0); }
+  75% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Highscore text */
+#highscore {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button flash smoothness */
+.btn {
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.flash {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px white;
+}
+
+.userflash {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px white;
+}
+
+/* Optional: make button grid wrap nicely on small screens */
+@media (max-width: 500px) {
+  .btn {
+    width: 120px;
+    height: 120px;
+    margin: 1rem;
+  }
+}

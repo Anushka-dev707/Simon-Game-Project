@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Say Game</title>
+    <link rel="stylesheet" href="simon.css" />
+</head>
+<body>
+    <h1>Simon Say Game</h1>
+    <h2>Press any key to start the game</h2>
+    <div class="btn-container">
+    <div class="line-one">
+        <div class="btn red" type="button" id="red">1</div>
+        <div class="btn yellow" type="button" id="yellow">2</div>
+    </div>
+    <div class="line-two">
+        <div class="btn green" type="button" id="green">3</div>
+        <div class="btn purple" type="button" id="purple">4</div>
+    </div>
+    </div>
+    <script src="simon.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simon Say Game</title>
+  <link rel="stylesheet" href="simon.css" />
+</head>
+<body>
+  <h1>Simon Say Game</h1>
+
+  <!-- status + highscore -->
+  <h2 id="status">Press any key to start the game</h2>
+  <p id="highscore">High Score: 0</p>
+
+  <div class="btn-container">
+    <div class="line-one">
+      <!-- keep id AND class so JS can find by .red and #red -->
+      <div class="btn red" role="button" tabindex="0" id="red">1</div>
+      <div class="btn yellow" role="button" tabindex="0" id="yellow">2</div>
+    </div>
+
+    <div class="line-two">
+      <div class="btn green" role="button" tabindex="0" id="green">3</div>
+      <div class="btn purple" role="button" tabindex="0" id="purple">4</div>
+    </div>
+  </div>
+
+  <!-- script should match the JS filename you use -->
+  <script src="simon.js"></script>
+</body>
+</html>
